@@ -1,0 +1,824 @@
+/* @import url('https://fonts.googlepis.com/css2?family=Nunito:wght@200;300;400;600&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@200;300;400;600&family=swap');
+
+
+:root {
+    --yellow: #f9ca24;
+}
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: none;
+    transition: all .2s linear;
+}
+
+*::selection {
+    background: var(--yellow);
+    color: #333;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+    width: 1.4rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: #222
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--yellow);
+}
+
+body {
+    background: #111;
+    overflow: hidden;
+    padding-left: 35rem;
+}
+
+section {
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+.btn {
+    padding: .7rem 3rem;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 2rem;
+    border-radius: 5rem;
+}
+
+.btn i {
+    padding: 0 .5rem;
+    font-size: 1.8rem;
+}
+
+.btn:hover {
+    background: var(--yellow);
+}
+
+.heading {
+    text-align: center;
+    margin: 0 6rem;
+    font-size: 4rem;
+    padding: 1rem;
+    border-bottom: .1rem solid #fff4;
+    color: #fff;
+}
+
+.heading span {
+    color: var(--yellow);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 100%;
+    width: 35rem;
+    background: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}
+
+header .user img {
+    height: 17rem;
+    width: 17rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: .7rem solid var(--yellow);
+}
+
+header .user .name {
+    font-size: 3.5rem;
+    color: #fff;
+}
+
+header .user .post {
+    font-size: 2rem;
+    color: #eee;
+}
+
+header .navbar {
+    width: 100%;
+}
+
+header .navbar ul {
+    list-style: none;
+    padding: 1rem 3rem;
+}
+
+
+header .navbar ul li a {
+    display: block;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    background: #333;
+    color: #fff;
+    font-size: 2rem;
+    border-radius: 5rem;
+}
+
+header .navbar ul li a:hover {
+    background: var(--yellow);
+    color: #111;
+}
+
+#menu {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding: 1rem 1.5rem;
+    z-index: 1000;
+    display: none;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    padding: 0 15rem;
+}
+
+.home h3 {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.home h1 {
+    font-size: 5rem;
+    color: #fff;
+}
+
+.home h1 span {
+    color: var(--yellow);
+}
+
+.home p {
+    font-size: 2rem;
+    color: #eee;
+    padding: 1rem 0;
+}
+
+.about .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+
+.about .row .info {
+    flex: 1 1 48rem;
+    padding: 2rem 1rem;
+    padding-left: 6rem;
+}
+
+.about .row .info h3 {
+    font-size: 2rem;
+    color: var(--yellow);
+    padding: 1rem 0;
+    font-weight: normal;
+}
+
+.about .row .info h3 span {
+    color: #eee;
+    padding: 0 .5rem;
+}
+
+.about .row .counter {
+    flex: 1 1 48rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about .row .counter .box p {
+    font-size: 3rem;
+    color: #eee;
+    padding: 1rem 0;
+}
+
+.about .row .counter .box span {
+    font-size: 4rem;
+    color: var(--yellow);
+}
+
+
+
+/* .mywork .box-container .box i {
+    position: absolute;
+    top: -1.5rem;
+    left: -2.5rem;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    background: var(--yellow);
+} */
+
+.mywork .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 7rem 5rem;
+}
+
+.mywork .row .info img {
+    border-radius: 20px;
+    border: .1rem solid var(--yellow);
+    margin-top: 2rem;
+    transition: all 0.2s rase-in-out;
+}
+
+.mywork .row .info {
+    font-size: 2rem;
+    color: #fff;
+    padding-top: 1.5rem;
+    object-fit: cover;
+}
+
+.mywork .row .info:hover img {
+    transform: scale(1.1);
+}
+
+.myskills .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 6rem 7rem;
+}
+
+.myskills .row .content .prograss {
+    /* position: relative; */
+    width: 50rem;
+    height: 3rem;
+    border-radius: 10px;
+    background-color: #fff;
+    /* overflow: hidden; */
+}
+
+.myskills .row .content .prograss:hover {
+    transform: scale(1.1);
+}
+
+.myskills .row .content .prograss .prograssW-bar {
+    width: 75%;
+    height: 3rem;
+    border-radius: 10px;
+    text-align: center;
+    background-color: var(--yellow);
+    cursor: pointer;
+    /* transition: all 0.10s rase-in-out; */
+}
+
+.myskills .row .content .prograss .prograssH-bar {
+    width: 70%;
+    height: 3rem;
+    border-radius: 10px;
+    text-align: center;
+    background-color: var(--yellow);
+}
+
+.myskills .row .content .prograss .prograssC-bar {
+    width: 65%;
+    height: 3rem;
+    border-radius: 10px;
+    text-align: center;
+    background-color: var(--yellow);
+}
+
+.myskills .row .content .prograss .prograssJ-bar {
+    width: 60%;
+    height: 3rem;
+    border-radius: 10px;
+    text-align: center;
+    background-color: var(--yellow);
+}
+
+.myskills .row .content .prograss .prograssB-bar {
+    width: 70%;
+    height: 3rem;
+    border-radius: 10px;
+    text-align: center;
+    background-color: var(--yellow);
+}
+
+.myskills .row .content h3 {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color: #eee;
+    padding: 1rem 0;
+    font-weight: normal;
+}
+
+.contact .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact .row .content {
+    flex: 1 1 30rem;
+    padding: 4rem;
+    padding-bottom: 0;
+}
+
+.contact .row form {
+    flex: 1 1 45rem;
+    padding: 2rem;
+    margin: 2rem;
+    margin-bottom: 4rem;
+}
+
+.contact .row form .box {
+    padding: 1.5rem;
+    margin: 1rem 0;
+    background: #3333;
+    color: #fff;
+    text-transform: none;
+    font-size: 1.7rem;
+    width: 100%;
+}
+
+.contact .row form .box::placeholder {
+    text-transform: capitalize;
+}
+
+.contact .row form .message {
+    height: 15rem;
+    resize: none;
+}
+
+.contact .row .content .title {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+
+.contact .row .content .info h3 {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color: #eee;
+    padding: 1rem 0;
+    font-weight: normal;
+}
+
+.contact .row .content .info h3 i {
+    padding-right: 1rem;
+    color: var(--yellow);
+}
+
+.top {
+    position: fixed;
+    bottom: 0.5rem;
+    right: -9rem;
+    z-index: 100;
+    display: none;
+}
+
+.top img {
+    width: 33%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries  */
+
+@media(max-width:1200px) {
+
+    html {
+        font-size: 55%;
+    }
+
+    .home {
+        padding: 1rem 4rem;
+    }
+
+    .myskills .row {
+        padding: 4rem;
+    }
+}
+
+@media(max-width:991px) {
+
+    header {
+        left: -100%;
+        transition: left 0.3s ease-in-out;
+    }
+
+    #menu {
+        display: block;
+    }
+
+    header.toggle {
+        left: 0%;
+    }
+
+    body {
+        padding: 0;
+    }
+
+    .home {
+        padding: 1rem 2rem;
+    }
+
+    .myskills .row {
+        flex-direction: column;
+    }
+
+    .myskills .row .content {
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+    
+
+}
+
+@media(max-width:768px) {
+
+    html {
+        font-size: 50%;
+    }
+
+    .about .row,
+    .mywork .row {
+        flex-direction: column;
+    }
+
+    .myskills .row {
+        padding: 2rem;
+    }
+
+    .myskills .row .content {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .myskills .row .content .prograss {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .mywork .row .info {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .home {
+        padding: 1rem;
+    }
+
+}
+
+@media(max-width:400px) {
+
+    header {
+        width: 100vw;
+    }
+
+    .heading {
+        margin: 0.3rem;
+        font-size: 3rem;
+    }
+
+    .about .row .info,
+    .about .row .counter .box,
+    .mywork .row .info {
+        width: 100%;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .mywork .row .info img {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .myskills .row {
+        padding: 1rem;
+    }
+
+    .myskills .row .content h3 {
+        font-size: 1.8rem;
+    }
+
+    .myskills .row .content .prograss {
+        width: 90%;
+    }
+
+    .contact .row form {
+        margin: 3rem 0;
+        /* margin-bottom: 10rem; */
+    }
+
+}
+
+
+
+@media (max-width: 600px) and (min-width: 400px) {
+
+    header {
+        width: 100vw;
+    }
+
+    .heading {
+        margin: 0.5rem;
+        font-size: 2.8rem;
+        /* Slightly smaller for smaller screens */
+    }
+
+    .about .row,
+    .mywork .row {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .about .row .info,
+    .about .row .counter .box,
+    .mywork .row .info {
+        width: 100%;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .mywork .row .info img,
+    .about .row .info img {
+        width: 90%;
+        /* Ensure image doesn't overflow container */
+        max-width: 100%;
+        /* Keep aspect ratio */
+        height: auto;
+        /* Maintain aspect ratio */
+        margin: 1rem auto;
+        /* Center the image */
+        border-radius: 10px;
+        /* Optional: reduce border-radius for smaller screens */
+    }
+
+    .home {
+        padding: 1rem;
+    }
+
+    .btn {
+        font-size: 1.6rem;
+        /* Adjust button text size */
+        padding: 0.6rem 2.5rem;
+        /* Adjust button padding */
+    }
+
+    .myskills .row {
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    .myskills .row .content {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .myskills .row .content h3 {
+        font-size: 1.8rem;
+    }
+
+    .myskills .row .content .prograss {
+        width: 90%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width: 991px) and (min-width: 600px) {
+
+    /* Hide the sidebar menu when width is between 600px and 991px */
+
+    header {
+        left: -100%;
+        width: 100vw;
+    }
+
+    /* Menu button visibility */
+    #menu {
+        display: block;
+    }
+
+    /* Make the header reappear when the menu button is clicked */
+    header.toggle {
+        left: 0%;
+    }
+
+    /* Remove left padding from body to center content */
+    body {
+        padding: 0;
+    }
+
+    /* Flex column layout for rows in the 'about' and 'mywork' sections */
+    .about .row,
+    .mywork .row {
+        flex-direction: column;
+        align-items: center;
+        /* Center content horizontally */
+        justify-content: center;
+        /* Center content vertically */
+        padding: 1rem;
+    }
+
+    /* Center the content within the 'about' section */
+    .about .row .info,
+    .about .row .counter .box,
+    .mywork .row .info {
+        width: 100%;
+        padding: 1rem;
+        text-align: center;
+        /* Center text */
+    }
+
+    /* Center images in the 'mywork' and 'about' sections */
+    .mywork .row .info img,
+    .about .row .info img {
+
+        width: 100%;
+        /* Full width */
+        max-width: 500px;
+        /* Set a max-width to prevent images from being too large */
+        height: auto;
+        /* Maintain aspect ratio */
+        margin: 0 auto;
+        /* Center the image horizontally */
+        border-radius: 10px;
+        /* Optional: set border-radius for rounded corners */
+    }
+
+    /* Adjust button sizes and positions */
+    .btn {
+        font-size: 1.8rem;
+        /* Adjust font size */
+        padding: 0.7rem 3rem;
+        /* Adjust padding */
+    }
+
+    .myskills .row {
+        padding: 3rem 2rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .myskills .row .content {
+        width: 100%;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .myskills .row .content .prograss {
+        width: 90%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    /* Center the 'top' button at the bottom right of the screen */
+    .top {
+        right: 1rem;
+        /* Right margin */
+        display: block;
+        /* Ensure it's visible */
+    }
+
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+
+    /* Adjust font size for better readability */
+    html {
+        font-size: 57.5%;
+    }
+
+    /* Center content and images in the 'about' and 'mywork' sections */
+    .about .row,
+    .mywork .row {
+        flex-direction: column;
+        /* Stack items vertically */
+        align-items: center;
+        /* Center items horizontally */
+        justify-content: center;
+        /* Center items vertically */
+        padding: 1rem 0;
+        /* Adjust padding */
+    }
+
+    /* Adjust image sizes and alignment */
+    .about .row .info img,
+    .mywork .row .info img {
+        width: 100%;
+        /* Full width */
+        max-width: 450px;
+        /* Set a max-width */
+        height: auto;
+        /* Maintain aspect ratio */
+        margin: 0 auto;
+        /* Center image horizontally */
+        border-radius: 10px;
+        /* Optional: rounded corners */
+        border: .1rem solid var(--yellow);
+        /* Optional: border */
+    }
+
+    /* Adjust text and layout in 'about' and 'mywork' sections */
+    .about .row .info,
+    .about .row .counter .box,
+    .mywork .row .info {
+        width: 100%;
+        /* Full width */
+        max-width: 600px;
+        /* Set a max-width */
+        padding: 1rem;
+        /* Adjust padding */
+        text-align: center;
+        /* Center text */
+    }
+
+    /* Adjust button sizes and positions */
+    .btn {
+        font-size: 1.8rem;
+        /* Adjust font size */
+        padding: 0.7rem 2.5rem;
+        /* Adjust padding */
+    }
+
+    .myskills .row {
+        padding: 4rem 2rem;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .myskills .row .content {
+        width: 45%;
+        margin-bottom: 2rem;
+    }
+
+    .myskills .row .content .prograss {
+        width: 100%;
+        max-width: 50rem;
+        margin: 0 auto;
+    }
+
+    /* Adjust the position and size of the 'top' button */
+    .top {
+        right: 1.5rem;
+        /* Right margin */
+        bottom: 1.5rem;
+        /* Bottom margin */
+        width: 50px;
+        /* Adjust width */
+        height: 50px;
+        /* Adjust height */
+        display: block;
+        /* Ensure visibility */
+    }
+}
